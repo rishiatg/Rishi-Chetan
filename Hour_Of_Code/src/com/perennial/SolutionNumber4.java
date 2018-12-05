@@ -1,7 +1,5 @@
 package com.perennial;
 
-import org.omg.CORBA.BAD_CONTEXT;
-
 import com.perennial.util.Base64;
 
 public class SolutionNumber4 {
@@ -12,8 +10,7 @@ public class SolutionNumber4 {
 		String encodedString = Base64.encode(data);
 		System.out.println(encodedString);
 		byte[] decodeValue = Base64.decode(encodedString);
-		String decodedString = decodeValue.toString();
+		String decodedString = new String(decodeValue);
 		System.out.println(decodedString);
-		
 	}
 }
